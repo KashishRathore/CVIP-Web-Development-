@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="ecommerce.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <link rel="icon" href="#">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+    <link rel="stylesheet" href="cart.css">
+    <style>
+
+        .pagination {
+            margin-left: 40%;
+            margin-bottom: 200px;
+          }
+      
+          .pagination button {
+            background-color: rgb(38, 85, 38);
+            padding: 15px;
+            color: white;
+            border: 0 solid black;
+            border-radius: 5px;
+            margin: 7px;
+            display: flex;
+          }
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light mx-4">
+        <div class="container-fluid logo">
+            <img src="file:///C:/Users/Dell/Downloads/20230705_161921_0000-removebg-preview.png" alt="img">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon-dark"></span>
+            </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="shop.html">Shop</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link"  href="contact.html">Contact</a>
+              </li>
+              <li class="nav-item ">    
+                 <h2 class="navlink">
+                     <i class="fa fa-shopping-cart"></i>
+                 </h2>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    
+
+
+
+    <section class="featured-products row mx-5">
+        <h1>Featured Products</h1>
+        <small>Special Collection New Mordern Design</small>
+
+        <div class="card col-2" style="width: 16rem; border-radius:10px;" >
+            <img src="https://rukminim1.flixcart.com/image/612/612/xif0q/t-shirt/x/v/e/l-all-rbcropn-sky-one-nb-nicky-boy-original-imagkq6hgg5gqsep.jpeg?q=70"
+                class="card-img-top" alt="..." style="width: 220px; height:220px" onclick="window.location.href = 'img1.html';">
+            <p onclick="window.location.href = 'img1.html';">
+                <small>NB NICKY BOY</small>
+                <h6 class="card-text">Men Printed Round N...</h6>
+                <label for="price">₹249</label>
+            </p>
+            <span></span>
+            <button class="btn btn-danger cart-btn" style="width: 60%; margin-left:20%;"><i class="fa-solid fa-cart-shopping" ></i> Add To Cart</button>
+        </div>
+
+
+        <div class="card col-2" style="width: 16rem; border-radius:10px;">
+            <img src="https://rukminim1.flixcart.com/image/612/612/xif0q/t-shirt/5/z/b/s-ww-melanin-balck-smartees-original-imagnxarrg6ygzhj.jpeg?q=70"
+                class="card-img-top" alt="..." style="width: 220px; height:220px">
+            <p>
+                <small>Smartees</small>
+                <h6 class="card-text">Women Printed Roun...</h6>
+                <label for="price">₹191</label>
+            </p>
+            <span></span>
+            <button class="btn btn-danger cart-btn" style="width: 60%; margin-left:20%;"><i class="fa-solid fa-cart-shopping" ></i> Add To Cart</button>
+        </div>
+
+
+        <div class="card col-2" style="width: 16rem; border-radius:10px;">
+            <img src="https://rukminim1.flixcart.com/image/612/612/l2arp8w0/shopsy-t-shirt/s/3/0/s-nmp-try-this-original-imag5xe3sdhgg8sg.jpeg?q=70"
+                class="card-img-top" alt="..." style="width: 220px; height:220px">
+            <p>
+                <small>GIRLS SHOPPIE</small>
+                <h6 class="card-text"> Women Colorblock...</h6>
+                <label for="price">₹289</label>
+            </p>
+            <span></span>
+            <button class="btn btn-danger cart-btn" style="width: 60%; margin-left:20%;"><i class="fa-solid fa-cart-shopping" ></i> Add To Cart</button>
+        </div>
+
+
+
+        <div class="card col-2" style="width: 16rem; border-radius:10px;">
+            <img src="https://rukminim1.flixcart.com/image/612/612/xif0q/t-shirt/4/2/n/xl-ww-goodvibes-black-smartees-original-imagnxahgxfmarqt.jpeg?q=70"
+                class="card-img-top" alt="..." style="width: 220px; height:220px">
+            <p>
+                <small>Smartees</small>
+                <h6 class="card-text"> Women Printed Rou...</h6>
+                <label for="price">₹199</label>
+            </p>
+            <span></span>
+            <button class="btn btn-danger cart-btn" style="width: 60%; margin-left:20%;"><i class="fa-solid fa-cart-shopping" ></i> Add To Cart</button>
+        </div>
+
+
+
+        <div class="card col-2" style="width: 16rem; border-radius:10px;">
+            <img src="https://rukminim1.flixcart.com/image/612/612/xif0q/t-shirt/0/a/h/s-bg23tslscl4047-bglore-original-imagnhqbz3umtc6h.jpeg?q=70"
+                class="card-img-top" alt="..." style="width: 220px; height:220px">
+            <p>
+                <small>BGLORE</small>
+                <h6 class="card-text">Men Graphic Print Round...</h6>
+                <label for="price">₹259</label>
+            </p>
+            <span></span>
+            <button class="btn btn-danger cart-btn" style="width: 60%; margin-left:20%;"><i class="fa-solid fa-cart-shopping" ></i> Add To Cart</button>
+        </div>
+
+        <div class="card col-2" style="width: 16rem; border-radius:10px;">
+            <img src="https://i.pinimg.com/originals/f7/20/c1/f720c190f502728a60ef50c874585944.png"
+                class="card-img-top" alt="..." style="width: 220px; height:220px">
+            <p>
+                <small>JUNEBERRY</small>
+                <h6 class="card-text">Women Tie & Dye Rou...</h6>
+                <label for="price">₹299</label>
+            </p>
+            <span></span>
+            <button class="btn btn-danger cart-btn" style="width: 60%; margin-left:20%;"><i class="fa-solid fa-cart-shopping" ></i> Add To Cart</button>
+        </div>
+
+
+        <div class="card col-2" style="width: 16rem; border-radius:10px;">
+            <img src="https://rukminim1.flixcart.com/image/612/612/xif0q/t-shirt/w/7/b/m-ww-goodthings-black-smartees-original-imagnxamez9gxtnu.jpeg?q=70"
+                class="card-img-top" alt="..." style="width: 220px; height:220px">
+            <p >
+                <small>Smartees</small>
+                <h6 class="card-text">Women Printed Rou...</h6>
+                <label for="price">₹191</label>
+            </p>
+            <span></span>
+            <button class="btn btn-danger cart-btn" style="width: 60%; margin-left:20%;"><i class="fa-solid fa-cart-shopping" ></i> Add To Cart</button>
+        </div>
+
+
+        <div class="card col-2" style="width: 16rem; border-radius:10px;">
+            <img src="https://rukminim1.flixcart.com/image/612/612/kiulxu80-0/t-shirt/y/o/2/s-tie-dye-babe-juneberry-original-imafyjk6hyzz2w5k.jpeg?q=70"
+                class="card-img-top" alt="..." style="width: 220px; height:220px">
+            <p >
+                <small>JUNEBERRY</small>
+                <h6 class="card-text">Women Tie & Dye R...</h6>
+                <label for="price">₹299</label>
+            </p>
+            <span></span>
+            <button class="btn btn-danger cart-btn" style="width: 60%; margin-left:20%;"><i class="fa-solid fa-cart-shopping" ></i> Add To Cart</button>
+        </div>
+
+
+        <div class="card col-2" style="width: 16rem; border-radius:10px;">
+            <img src="https://rukminim1.flixcart.com/image/612/612/xif0q/t-shirt/g/z/h/l-cwt-try-this-original-imag9uejybgcy6cy-bb.jpeg?q=70"
+                class="card-img-top" alt="..." style="width: 220px; height:220px">
+            <p >
+                <small>Try This</small>
+                <h6 class="card-text">Men Colorblock Hooded Neck</h6>
+                <label for="price">₹299</label>
+            </p>
+            <span></span>
+            <button class="btn btn-danger cart-btn" style="width: 60%; margin-left:20%;"><i class="fa-solid fa-cart-shopping" ></i> Add To Cart</button>
+        </div>
+
+
+
+         <div class="card col-2" style="width: 16rem; border-radius:10px;">
+            <img src="https://rukminim1.flixcart.com/image/612/612/xif0q/t-shirt/r/s/u/l-hs-esd-boy-black-1109-kaspy-original-imagm2kprcvua6qt.jpeg?q=70"
+                class="card-img-top" alt="..." style="width: 220px; height:220px">
+            <p >
+                <small>ZFIT</small>
+                <h6 class="card-text">Men Printed Round...</h6>
+                <label for="price">₹239</label>
+            </p>
+            <span></span>
+            <button class="btn btn-danger cart-btn" style="width: 60%; margin-left:20%;"><i class="fa-solid fa-cart-shopping" ></i> Add To Cart</button>
+        </div>
+
+
+
+        <div class="card col-2" style="width: 16rem; border-radius:10px;">
+            <img src="https://rukminim1.flixcart.com/image/612/612/xif0q/t-shirt/3/w/x/l-bg23tsssrb4075-bglore-original-imagncqzhz4vx4en.jpeg?q=70"
+                class="card-img-top" alt="..." style="width: 220px; height:220px">
+            <p >
+                <small>BGLORE</small>
+                <h6 class="card-text">Men Printed Round Neck</h6>
+                <label for="price">₹239</label>
+            </p>
+            <span></span>
+            <button class="btn btn-danger cart-btn" style="width: 60%; margin-left:20%;"><i class="fa-solid fa-cart-shopping" ></i> Add To Cart</button>
+        </div>
+
+
+
+        <div class="card col-2" style="width: 16rem; border-radius:10px;">
+            <img src="https://rukminim1.flixcart.com/image/612/612/xif0q/t-shirt/b/0/v/l-tbgrrn-d45-tripr-original-imagza9znc7nhfhj.jpeg?q=70"
+                class="card-img-top" alt="..." style="width: 220px; height:220px">
+            <p >
+                <small>TRIPR</small>
+                <h6 class="card-text">Men Printed Round </h6>
+                <label for="price">₹199</label>
+            </p>
+            <span></span>
+            <button class="btn btn-danger cart-btn" style="width: 60%; margin-left:20%;"><i class="fa-solid fa-cart-shopping" ></i> Add To Cart</button>
+        </div>
+
+
+
+        <div class="card col-2" style="width: 16rem; border-radius:10px;">
+            <img src="https://rukminim1.flixcart.com/image/612/612/xif0q/t-shirt/j/t/g/xl-grl-fs49-orng-groovy-leotude-original-imaghg9whuf6merz.jpeg?q=70"
+                class="card-img-top" alt="..." style="width: 220px; height:220px">
+            <p >
+                <small>Leotude</small>
+                <h6 class="card-text">Women Printed Rou... </h6>
+                <label for="price">₹377</label>
+            </p>
+            <span></span>
+            <button class="btn btn-danger cart-btn" style="width: 60%; margin-left:20%;"><i class="fa-solid fa-cart-shopping" ></i> Add To Cart</button>
+        </div>
+
+        
+
+
+        <div class="card col-2" style="width: 16rem; border-radius:10px;">
+            <img src="https://rukminim1.flixcart.com/image/612/612/l0o6nbk0/t-shirt/r/g/k/l-panda-olive-base-41-original-imagceqf4cavgfhz.jpeg?q=70"
+                class="card-img-top" alt="..." style="width: 220px; height:220px">
+            <p >
+                <small>BASE 41</small>
+                <h6 class="card-text">BASE 41</h6>
+                <label for="price">₹274</label>
+            </p>
+            <span></span>
+            <button class="btn btn-danger cart-btn" style="width: 60%; margin-left:20%;"><i class="fa-solid fa-cart-shopping" ></i> Add To Cart</button>
+        </div>
+
+
+
+        <div class="card col-2" style="width: 16rem; border-radius:10px;">
+            <img src="https://rukminim1.flixcart.com/image/612/612/l0o6nbk0/t-shirt/l/4/f/l-panda-olive-base-41-original-imagceqf2gzfnnhm.jpeg?q=70"
+                class="card-img-top" alt="..." style="width: 220px; height:220px">
+            <p >
+                <small>Smartees</small>
+                <h6 class="card-text">Men Printed Round</h6>
+                <label for="price">₹179</label>
+            </p>
+            <span></span>
+            <button class="btn btn-danger cart-btn" style="width: 60%; margin-left:20%;"><i class="fa-solid fa-cart-shopping" ></i> Add To Cart</button>
+        </div>
+
+
+
+
+        <div class="card col-2" style="width: 16rem; border-radius:10px;">
+            <img src="https://rukminim1.flixcart.com/image/612/612/kzu6efk0/t-shirt/o/g/j/s-soul-yellow-base-41-original-imagbre8mh6zqkfh.jpeg?q=70"
+                class="card-img-top" alt="..." style="width: 220px; height:220px">
+            <p >
+                <small>BASE 41</small>
+                <h6 class="card-text">Women Solid Roun...</h6>
+                <label for="price">₹275</label>
+            </p>
+            <span></span>
+            <button class="btn btn-danger cart-btn" style="width: 60%; margin-left:20%;"><i class="fa-solid fa-cart-shopping" ></i> Add To Cart</button>
+        </div>
+
+        <div class="select">
+
+        </div>
+
+    </section>
+    <section class="pagination">
+        <button>1</button>
+        <button>2</button>
+        <button><i class="fa-solid fa-arrow-right"></i></button>
+      </section>
+    
+    
+      <footer class="hidden">
+        <div class="signup row">
+          <div class="col-md">
+            <h5>Sign Up for updates of Amazing Collection</h5>
+            <small>Get notifications of about latest collections and <span>special offers.</span></small>
+          </div>
+          <div class="signup-box col-md m-auto">
+            <input type="text"><span><button>Sign Up</button></span>
+          </div>
+        </div>
+    
+    
+      
+        <div class="footer row m-auto">
+          <div class="contact-container col-md">
+    
+            <h6>Contact</h6>
+            <ul>
+              <li><span>Address:</span></li>
+              <li><span>Phone</span></li>
+              <li><span>Hours:</span></li>
+            </ul>
+            <div class="social-media">
+              <h6>Follow us</h6>
+              <div class="row">
+                <li class="col"><a href="#"><i class=" fa-brands fa-facebook"></i></a></li>
+                <li class="col"><a href="#"><i class=" fa-brands fa-linkedin"></i></a></li>
+                <li class="col"><a href="#"><i class=" fa-brands fa-twitter"></i></a></li>
+                <li class="col"><a href="#"><i class=" fa-brands fa-instagram"></i></a></li>
+                <li class="col"><a href="#"><i class=" fa-solid fa-envelope"></i></a></li>
+              </div>
+            </div>
+          </div>
+    
+          <div class="about col-md">
+            <ul>
+              <li>
+                <h6>About</h6>
+              </li>
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Delivery Information</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+              <li><a href="#">Terms & Condition</a></li>
+              <li><a href="#">Contact Us</a></li>
+            </ul>
+          </div>
+    
+          <div class="account col-md">
+            <ul>
+              <li>
+                <h6>My Account</h6>
+              </li>
+              <li><a href="#">Sign in</a></li>
+              <li><a href="#">View Cart</a></li>
+              <li><a href="#">My Wishlist</a></li>
+              <li><a href="#">Track My Order</a></li>
+              <li><a href="#">Help</a></li>
+            </ul>
+          </div>
+    
+          <div class="install col-md-4">
+            <h6>Install App</h6>
+            From Appstore or GooglePlay
+            <img src="https://hummarriage.com/wp-content/uploads/2019/02/Credit-And-Cedbit-Cards-Accepted-Apple-Pay-And-Google-Pay-1024x146.png" alt="pay" style="width: 350px;">
+          </div>
+    
+          <div class="logo">
+            <img src="file:///C:/Users/Dell/Downloads/20230705_161921_0000-removebg-preview.png" alt="img" style="padding:20px">
+          </div>
+        </div>
+    
+        <div class="text-center copyright">
+          Copyright-@2023. All Rights Reserved by TeeShop.com
+    
+        </div>
+      </footer>
+    </body>
+    <script src="signup.js"></script>
+    <script src="cart.js"></script>  
+
+
+    </html>

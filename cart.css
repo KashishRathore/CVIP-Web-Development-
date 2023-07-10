@@ -1,0 +1,84 @@
+h2 {
+    width: 3%;
+    position: relative;
+    cursor: pointer;
+    color: rgb(214, 173, 40);
+}
+
+h2.zero:before {
+    opacity: 1;
+}
+
+h2:before {
+    content: attr(data-count);
+    position: absolute;
+    color: white;
+    right: 16px;
+    font-size: 15px;
+    text-align: center;
+    top: -15px;
+    width: 20px;
+    height: 20px;
+    background-color: red;
+    border-radius: 50%;
+    opacity: 0;
+}
+
+.select.display {
+    top: 10px;
+}
+
+.select {
+    width: 50%;
+    height: 600px;
+    background: #222;
+    position: absolute;
+    top: -1000px;
+    left: 0%;
+    transition: 0.5s;
+    overflow-y: auto;
+    margin: auto;
+}
+
+.select div {
+    width: 100%;
+    display: flex;
+    height: 410px;
+    padding: 5px;
+    border: 1px solid white;
+    position: relative;
+    margin: 5px auto;
+}
+
+.select img {
+    width: 100px;
+    height: 100%;
+}
+
+.select div h6 small{
+    font-size: 20px;
+    padding: 65px;
+    color: white;
+}
+
+.select div button {
+    left: 45%;
+    top: 50%;
+    color: rgb(0, 0, 0);
+}
+
+.select div button {
+    left: 20%;
+    top: 50%;
+    color: rgb(226, 224, 224);
+    background-color: rgb(165, 48, 48);
+    border-radius: 5px;
+    width: 50%;
+    margin: auto 25%;
+    border: 0 solid black;
+    padding: 5px;
+}
+
+.select div span {
+    display: none;
+}

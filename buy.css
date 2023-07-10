@@ -1,0 +1,96 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #606C5D;
+}
+
+.card{
+    background-color: #dcdddb;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+main{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.heading ,.heading1{
+    text-align: center;
+}
+
+.details{
+    margin-right: 20%;
+}
+
+label{
+    display: flex;
+    flex-direction: column;
+    margin: 9px;
+}
+
+.card{
+     margin:10vh auto;
+}
+
+input,select{
+    width: 300px;
+    background: transparent;
+    border-radius: 5px;
+    border: 0 solid black;
+    box-shadow: 0 1px 2px #606C5D;
+    padding: 5px;
+    
+}
+
+input:hover ,select:hover{
+    border: 1px solid #606C5D;
+}
+
+h1 {
+    text-align: center;
+    font-family: "Sofia", sans-serif;
+    font-size: 70px;
+    text-shadow: 3px 3px 3px #ababab;
+}
+
+button{
+    border:0 solid black;
+    border-radius: 10px;
+    width: 200px;
+    padding: 6px;
+    background-color: rgb(155, 47, 47);
+    color: white;
+    font-size: 20px;
+    margin-left:60px;
+}
+
+button:hover{
+    background-color: rgb(141, 14, 14);
+}
+
+.accept{
+    display: flex;
+    flex-direction: row;
+}
+
+#check{
+    padding: 0;
+    width: 14px;
+    border-radius: 0;
+    box-shadow: 0px;
+}
+
+@media screen and (max-width:1000px) {
+    main{
+        display: flex;
+        flex-direction: column;
+    }
+    h1 {
+        font-size: 50px;
+    }
+}

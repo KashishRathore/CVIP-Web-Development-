@@ -1,0 +1,397 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+body {
+    width: 100%;
+    overflow-x: hidden;
+    background-color: #E9FFC2;
+}
+
+.logo {
+    margin-left: 1%;
+
+}
+.logo img{
+   width: 200px;
+   line-height: 80px;
+}
+
+.navbar-nav{
+    margin:auto 10%;
+}
+
+.nav-item{
+    margin:auto 40px;
+    border-radius: 25px;
+    
+}
+.nav-item a{
+    color: rgb(49, 49, 49);
+}
+
+header {
+    padding: 110px;
+    height: 90vh;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+}
+
+header {
+    clip-path: polygon(0 0, 100% 0%, 100% 35%, 0% 100%);
+    background: url('https://i2.wp.com/wallpapercave.com/wp/wp2757874.gif');
+    background-position-x: center;
+    background-position-y: center;
+    margin-bottom: 10%;
+}
+
+header>small {
+    font-size: 15px;
+    font-weight: 500;
+    color: #F9F5F6;
+}
+
+
+header>h1 {
+    font-size: 45px;
+    font-weight: 900;
+    color: #FFF6F4;
+}
+
+.big-para {
+    font-size: 25px;
+    color: rgb(158, 180, 119);
+    margin: 0;
+}
+
+.small-para {
+    font-size: 15px;
+    color: #F9F5F6;
+}
+
+header button {
+    border: 0px solid black;
+    background-color: rgb(197, 59, 59);
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    width: 150px;
+}
+
+header button:hover{
+    background-color: rgb(95, 10, 10);
+}
+
+.model {
+    position: absolute;
+    top: 150px;
+    right: 150px;
+}
+
+.model img {
+    width: 430px;
+    transform: rotateY(180deg);
+}
+.inner{
+    display: flex;
+    flex-direction: column;
+   
+}
+
+.inner b{
+    width: 160px;
+    margin: 10px;
+}
+
+.services h1{
+    margin: 70px auto;
+    font-family: "Sofia", sans-serif;
+    font-size: 70px;
+    text-shadow: 3px 3px 3px #ababab;
+    text-align: center;
+}
+
+ .boxes .inner{
+    padding: 20px;
+    text-align: center;
+    margin: 30px;
+    position: relative;
+}
+
+.boxes .inner::before{
+    content:'';
+    left: 0;
+    bottom: 0;
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-bottom: 3px solid transparent;
+    border-left: 3px solid transparent;
+    box-sizing: border-box;
+    transition: all 0.8s ease;
+}
+
+ .boxes .inner::after{
+    content:'';
+    right: 0;
+    top: 0;
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-top: 3px solid transparent;
+    border-right: 3px solid transparent;
+    box-sizing: border-box;
+    transition: all 0.8s ease;
+}
+
+ .boxes:hover .inner::after{
+     border-color: red;
+     width: 100%;
+     height: 100%;
+}
+
+.boxes:hover .inner::before{
+    border-color: red;
+    width: 100%;
+    height: 100%;
+}
+
+.inner{
+    background:linear-gradient(90deg,#F8E8EE,#98EECC)
+}
+
+.boxes img {
+    margin: 30px;
+}
+
+.featured-products {
+    margin: 100px;
+}
+
+.card {
+    margin: 100px auto;
+    border-radius: 25px;
+    height: 400px;  
+    transition: all 0.4s;
+}
+.card:hover{
+    transform: scale(1.1);
+}
+
+.card img {
+    background-color: #E7CEA6;
+    margin: 10px auto 0 auto;
+    border-radius: 20px;
+}
+
+.featured-products .card {
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+.featured-products h1 {
+    margin: 150px auto 50px auto;
+    text-align: center;
+    font-family: "Sofia", sans-serif;
+    font-size: 70px;
+    text-shadow: 3px 3px 3px #ababab;
+}
+
+.featured-products small {
+    margin-bottom: 60px;
+    text-align: center;
+    font-family: 'Belanosima', sans-serif;
+    font-size: 20px;
+}
+
+.cart i {
+    background-color: rgb(75, 148, 75);
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    width: 40px;
+    height: 40px;
+    padding: 9px;
+    border-radius: 50px;
+    margin-top: 20px;
+}
+
+.cart i:hover {
+    background-color: rgb(38, 85, 38);
+    color: rgb(137, 192, 137);
+}
+
+.featured-products label {
+    font-size: 25px;
+    font-weight: 600;
+    color: rgb(38, 85, 38);
+}
+
+.discount {
+    width: 100%;
+    height: 300px;
+    border: 1px solid black;
+    background: url('https://images.unsplash.com/photo-1607082348824-0a96f2a4b9da?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80');
+    background-size: cover;
+    text-align: center;
+    margin: 40px auto;
+    color:#f7f7f7;
+    text-shadow:
+         -1px -1px 0 black,
+          1px -1px 0 black,
+         -1px 1px 0 black,
+          1px 1px 0 black;
+}
+
+.discount div{
+    margin-top: 40px;
+}
+
+.discount p {
+    font-size: 20px;
+}
+
+.discount span {
+    font-size: 25px;
+    color: rgb(177, 46, 46);
+    font-weight: 800;
+}
+
+.updates {
+    margin: 50px auto 150px auto;
+}
+
+.big-box1 {
+    background: url('https://www.callcentrehelper.com/images/stories/2019/07/holding-shopping-bags-smiling-760.jpg');
+}
+
+.big-box2 {
+    background: url('https://images.unsplash.com/photo-1567401893414-76b7b1e5a7a5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80');
+}
+
+.small-box1 img {
+    height: 300px;
+    width: 350px;
+    margin: 10px;
+
+}
+
+.signup {
+    padding: 50px;
+    background-color: rgb(9, 0, 43);
+    color: white;
+    margin: 200px;
+  
+}
+
+.signup small {
+    color: rgb(165, 165, 165);
+}
+
+.signup span {
+    color: rgb(255, 187, 0);
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.signup input {
+    width: 60%;
+    padding: 3px;
+}
+
+
+.signup button {
+    width: 13%;
+    padding: 5px;
+    border: 0 solid black;
+    background-color: rgb(57, 153, 57);
+    color: #f7f7f7;
+}
+footer{  
+    text-align: center;
+    background: url('https://images.unsplash.com/photo-1567401893414-76b7b1e5a7a5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80');
+    background-size: cover;
+    background-position: center;
+}
+
+footer .logo img{
+    width: 330px;
+    height:200px;
+}
+
+footer li {
+    list-style: none;
+}
+
+footer a {
+    text-decoration: none;
+    color: white;
+}
+.social-media i{
+     font-size: 25px;
+}
+
+footer .logo img{
+     width: 400px;
+     height: 200px;
+}
+
+.footer{
+    background: rgba(255, 255, 255, 0.24);
+    box-shadow: 0 8px 32px 0 rgba(19, 19, 20, 0.37);
+    backdrop-filter: blur(4px);
+    border: 3px solid rgba(255, 255, 255, 0.18);
+    width: 95%;
+    padding: 90px;
+    border-radius: 10px;
+    color: white;
+    text-shadow:
+         -1px -1px 0 black,
+          1px -1px 0 black,
+         -1px 1px 0 black,
+          1px 1px 0 black;
+   
+}
+.footer>div{
+    margin-bottom: 40px;
+}
+.copyright {
+    background-color: rgb(9, 0, 43);
+    color: white;
+    margin-top: 100px;
+    padding: 20px;
+    height: 50px;
+   
+}
+
+@media screen and (max-width:1100px){
+    .model {
+        visibility: hidden;
+    }
+}
+
+@media screen and (max-width:740px){
+    .logo {
+        margin-left:0;
+    }
+    .logo img{
+       width: 150px;
+    }
+
+
+   
+   
+    header {
+        clip-path: polygon(0% 0, 100% 0, 100% 100%, 0% 100%);
+        background: url('https://i2.wp.com/wallpapercave.com/wp/wp2757874.gif');
+        background-position-x: center;
+        background-position-y: center;
+        margin-bottom: 10%;
+    }
+    .box {
+        width: 400px;
+    }
+    .signup button {
+        width: 20%;
+    }
+    .services .content .boxes .inner{
+        margin: 30px 60px;     
+    }
+}
+
